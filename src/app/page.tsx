@@ -1,7 +1,16 @@
-export default function Home() {
+import { About } from "./About/page";
+import { Home } from "./Home/page";
+
+export default function Root() {
   return (
-    <main>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
+    <main className="pt-48">
+      <section>
+        <Home />
+      </section>
+
+      <section id="about">
+        <Home />
+      </section>
     </main>
   );
 }

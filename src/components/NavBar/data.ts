@@ -1,18 +1,18 @@
 export const data = [
   {
     label: "Home",
-    href: "/home",
+    href: "/",
   },
   {
     label: "About",
-    href: "/about",
+    href: "#about",
   },
   {
     label: "Contact",
-    href: "/contact",
+    href: "#contact",
   },
   {
     label: "Projects",
-    href: "/projects",
+    href: "#projects",
   },
 ];

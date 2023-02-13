@@ -33,7 +33,7 @@ export const MenuDropDown = () => {
                 key={data.href}
                 className="hover:scale-125 transition-all duration-200 flex justify-center text-2xl"
               >
-                <Link href={data.href}>{data.label}</Link>
+                <a href={data.href}>{data.label}</a>
               </li>
             ))}
           </ul>
