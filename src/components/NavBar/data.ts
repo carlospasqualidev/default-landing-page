@@ -1,7 +1,7 @@
 export const data = [
   {
     label: "Home",
-    href: "/",
+    href: "#",
   },
   {
     label: "About",

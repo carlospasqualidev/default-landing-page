@@ -2,19 +2,11 @@ import Link from "next/link";
 import { IRedirectButton } from "./types";
 import { FaGithub } from "react-icons/fa";
 
-export const RedirectButton = ({ children, href, styles }: IRedirectButton) => {
+export const RedirectButton = ({ href, Icon }: IRedirectButton) => {
   return (
-    <a href={href}>
-      <div
-        style={{
-          backgroundColor: styles.bgColor,
-          color: styles.textColor,
-          borderColor: styles.textColor,
-        }}
-        className="flex justify-center items-center gap-2 px-4 py-2 rounded-full border-2 hover:scale-105 ease-in transition-all duration-200"
-      >
-        <FaGithub size="1.5rem" />
-        {children}
+    <a href={href} target={"_blank"} rel="noreferrer">
+      <div className="flex justify-center items-center p-1 hover:scale-125 ease-in transition-all duration-200">
+        {<Icon size={24} />}
       </div>
     </a>
   );

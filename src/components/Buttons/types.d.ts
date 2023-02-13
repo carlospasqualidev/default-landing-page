@@ -6,11 +6,6 @@ export interface IButton extends ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 export interface IRedirectButton extends LinkProps {
-  children: string;
   href: string;
-
-  styles: {
-    bgColor?: string;
-    textColor?: string;
-  };
+  Icon: any;
 }
