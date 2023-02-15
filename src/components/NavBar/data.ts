@@ -8,8 +8,8 @@ export const data = [
     href: "#about",
   },
   {
-    label: "Contact",
-    href: "#contact",
+    label: "My Expiriences",
+    href: "#expiriences",
   },
   {
     label: "Projects",

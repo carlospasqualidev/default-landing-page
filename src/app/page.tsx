@@ -1,4 +1,5 @@
 import { About } from "./About/page";
+import { Expiriences } from "./Expiriences/page";
 import { Home } from "./Home/page";
 
 export default function Root() {
@@ -9,12 +10,12 @@ export default function Root() {
       </section>
 
       <section id="about">
-        <Home />
+        <About />
       </section>
 
-      {/* <section id="about">
-        <Home />
-      </section> */}
+      <section id="expiriences">
+        <Expiriences />
+      </section>
     </main>
   );
 }

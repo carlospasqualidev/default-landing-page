@@ -1,10 +1,10 @@
 import Image from "next/image";
 import { svg } from "@/assets";
-export function Home() {
+export function Expiriences() {
   return (
     <div className="flex gap-12 justify-center h-screen">
       <div className="flex flex-col gap-4 justify-center">
-        <text className="text-4xl">What is Lorem Ipsum?</text>
+        <text className="text-4xl">My Expiriences</text>
         <text className="text-xl">
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industrys standard dummy text ever
@@ -18,7 +18,7 @@ export function Home() {
         </text>
       </div>
       <Image
-        src={svg.DeveloperBack}
+        src={svg.MyExpiriences}
         alt="Picture of the author"
         width={500}
         height={500}

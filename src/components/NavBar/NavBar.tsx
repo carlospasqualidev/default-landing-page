@@ -1,7 +1,12 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { FaGithub } from "react-icons/fa";
+import {
+  FaGithubSquare,
+  FaJsSquare,
+  FaLinkedin,
+  FaSkull,
+} from "react-icons/fa";
 import { RedirectButton } from "../Buttons/RedirectButton";
 import { MenuDropDown } from "../MenuDropDown/MenuDropDown";
 import { data } from "./data";
@@ -18,7 +23,7 @@ export const NavBar = () => {
       </div>
 
       <div className="max-lg:hidden">
-        <a href="/">Logo</a>
+        <FaSkull size={32} />
       </div>
 
       <ul className="flex items-center gap-12 max-lg:hidden">
@@ -37,12 +42,17 @@ export const NavBar = () => {
         ))}
       </ul>
 
-      <div className="max-lg:hidden">
+      <div className="max-lg:hidden flex col">
+        <RedirectButton
+          href="https://www.linkedin.com/in/carlos-pasquali-48aa49207/?originalSubdomain=br"
+          Icon={FaLinkedin}
+        />
         <RedirectButton
           href="https://github.com/carlospasqualidev"
-          Icon={FaGithub}
+          Icon={FaGithubSquare}
         />
       </div>
     </nav>
   );
 };
+// FaJsSquare
